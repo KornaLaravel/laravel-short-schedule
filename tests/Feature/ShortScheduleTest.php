@@ -41,13 +41,13 @@ it('will overlap tasks by default', function () {
 it('can prevent overlaps', function () {
     TestKernel::registerShortScheduleCommand(
         fn (ShortSchedule $shortSchedule) => $shortSchedule
-            ->exec("echo 'called' >> '{$this->getTempFilePath()}'; sleep 0.2")
+            ->exec("echo 'called' >> '{$this->getTempFilePath()}'; sleep 0.4")
             ->everySeconds(0.1)
             ->withoutOverlapping()
     );
 
     $this
-        ->runShortScheduleForSeconds(0.59)
+        ->runShortScheduleForSeconds(0.75)
         ->assertTempFileContains('called', 2);
 });
 
