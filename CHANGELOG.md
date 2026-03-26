@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-short-schedule` will be documented in this file
 
+## 1.7.0 - 2026-03-26
+
+### What's Changed
+
+- Add Laravel 13 support
+- Drop Laravel 10 and 11 support
+- Migrate to Pest 4
+- Require PHP 8.3+
+
 ## 1.6.4 - 2025-07-28
 
 ### What's Changed
