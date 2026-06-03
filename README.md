@@ -105,7 +105,7 @@ After the given amount of seconds, the worker and all it's child processes will 
 
 ## Usage
 
-Un your routes/console.php file, you can use the `ShortSchedule` facade to schedule commands.
+In your routes/console.php file, you can use the `ShortSchedule` facade to schedule commands.
 
 ```php
 // in your routes/console.php file
